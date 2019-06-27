@@ -10,13 +10,14 @@
   --purple: #59426B;
 }
 
+
 html {
   scroll-behavior: smooth;
 }
 
-body {
+/* body {
   font-family: 'Open Sans', sans-serif;
-}
+} */
 
 nav {
   background-color: var(--teal);
@@ -29,6 +30,31 @@ nav * {
 
 nav img {
   max-height: 50px;
+}
+
+
+#slides img {
+  width: 100%;
+  max-height: 70vh;
+  object-fit: cover;
+
+  -webkit-filter: contrast(40%); /* Safari 6.0 - 9.0 */
+  filter: contrast(40%);
+}
+
+#slides #caption-1 {
+  top: 5%;
+  bottom: auto;
+}
+
+#slides #caption-2 {
+  top: 15%;
+  bottom: auto;
+}
+
+#slides #caption-3 {
+  top: 5%;
+  bottom: auto;
 }
 
 
@@ -48,7 +74,14 @@ nav img {
   background-color: var(--pink);
 } 
 
+#insta {
+  height: auto;
+  width: 100%;
+}
 
+.referral {
+  display: none !important;
+}
 
 #contact {
   min-height: 400px;
@@ -58,6 +91,7 @@ nav img {
   align-items: stretch;
   flex-wrap: wrap-reverse;
   justify-content: space-evenly;
+  text-align: center;
 
   background-color: var(--purple);
   color: rgb(255, 226, 226);
@@ -69,18 +103,39 @@ nav img {
   margin: 15px;
 }
 
-#contact > div > h1 {
-  text-decoration: underline;
-
+#contact h1 {
+  border-top: 1px solid #d5d5d5; 
+  border-bottom: 1px solid #d5d5d5;
 }
 
 #links {
+  display: flex;
+  flex-direction: column;
+}
 
+#links {
+  font-size: 4em;
+  margin-top: 25px;
 }
 
 
+.fa-instagram {
+  color: #3f729b;
+}
 
+.fa-facebook {
+  color: #3b5998;
+}
 
+.fa-whatsapp {
+  color: #25d366;
+}
+
+.fa-instagram:hover,
+.fa-facebook:hover,
+.fa-whatsapp:hover {
+  color: #d5d5d5;
+}
 
 
 
