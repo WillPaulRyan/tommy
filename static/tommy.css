@@ -52,6 +52,11 @@ nav img {
   bottom: auto;
 }
 
+#slides a {
+  margin-left: .4em;
+  margin-right: .4em;
+}
+
 #slides #caption-3 {
   top: 5%;
   bottom: auto;
