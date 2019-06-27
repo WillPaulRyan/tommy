@@ -47,22 +47,34 @@ nav img {
   bottom: auto;
 }
 
+#slides .carousel-caption h1 {
+  text-shadow: 1px 1px 15px #000;
+}
+
 #slides a {
   margin-left: .3em;
   margin-right: .3em;
 }
 
+.btn-primary {
+  background-color: var(--teal);
+  border-color: var(--teal);
+}
 
-#hero {
+.btn-primary:hover {
+  background-color: #10D1BD;
+  border-color: #10D1BD;
+}
+
+/* #hero {
   height: 80vh;
   background-image: linear-gradient(135deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 30%), url('./images/kid-bg.jpg');
   background-color: #cccccc;
-  /* background-position: center; */
   background-repeat: no-repeat;
   background-size: cover;
 
   margin-bottom: 0;
-}
+} */
 
 #about {
   height: 400px;
