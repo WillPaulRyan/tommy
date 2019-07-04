@@ -1,13 +1,10 @@
 :root {
-  
-  overflow-x: hidden;
-
-  
+    
   /* custom colors */
-  --teal: #28EDDC;
-  --green: #B9E6A3;
-  --pink: #F4829B;
-  --purple: #59426B;
+  --teal: #7ebca4;
+  --green: #b8db8a;
+  --pink: #eb6d71;
+  --purple: #665283;
 }
 
 
@@ -15,17 +12,41 @@ html {
   scroll-behavior: smooth;
 }
 
-/* body {
-  font-family: 'Open Sans', sans-serif;
-} */
+html, body {
+  width: auto !important;
+  overflow-x: hidden !important;
+}
+
+body {
+  font-family: 'Varela Round', sans-serif;
+}
 
 nav {
-  background-color: var(--teal);
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: var(--pink);
+
+  background-color: var(--purple);
+  /* max-height: 15vh; */
+
+-webkit-box-shadow: inset 0px -8px 15px -6px rgba(0,0,0,0.37);
+-moz-box-shadow: inset 0px -8px 15px -6px rgba(0,0,0,0.37);
+box-shadow: inset 0px -8px 15px -6px rgba(0,0,0,0.37);
+
 }
 
 nav * {
   padding-left: 20px;
   padding-right: 20px;
+}
+
+nav li.active {
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  border-bottom-color: var(--pink);
+  
+  padding-bottom: 20px;
+  margin-bottom: -20px;
 }
 
 nav img {
@@ -36,6 +57,8 @@ nav img {
 #slides img {
   width: 100%;
   height: 80vh;
+  /* min-height: 70vh;
+  max-height: 80vh; */
   object-fit: cover;
 
   -webkit-filter: contrast(40%); /* Safari 6.0 - 9.0 */
@@ -48,37 +71,84 @@ nav img {
 }
 
 #slides .carousel-caption h1 {
+  /* font-size: 12vw; */
+
   text-shadow: 1px 1px 15px #000;
 }
 
 #slides a {
   margin-left: .3em;
   margin-right: .3em;
+  /* font-size: 4vw; */
 }
 
-.btn-primary {
-  background-color: var(--teal);
-  border-color: var(--teal);
+@media (max-width: 758px) {
+  #slides .carousel-caption h1 {
+    font-size: 10vw;
+    text-shadow: 1px 1px 15px #000;
+  }
+  
+  #slides .carousel-caption h3 {
+    font-size: 4vw;
+  }
+
+  #slides a {
+    margin-left: .3em;
+    margin-right: .3em;
+    font-size: 3vw;
+  }
+
 }
 
-.btn-primary:hover {
-  background-color: #10D1BD;
-  border-color: #10D1BD;
+@media (max-width: 600px) {
+  #slides .carousel-caption h1 {
+    font-size: 10vh;
+    text-shadow: 1px 1px 15px #000;
+  }
+  
+  #slides .carousel-caption h3 {
+    font-size: 4.5vh;
+  }
+
+  #slides a {
+    margin-left: .3em;
+    margin-right: .3em;
+    font-size: 3vh;
+  }
+
 }
 
-/* #hero {
-  height: 80vh;
-  background-image: linear-gradient(135deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 30%), url('./images/kid-bg.jpg');
-  background-color: #cccccc;
-  background-repeat: no-repeat;
-  background-size: cover;
+.btn {
+  margin-top: 5px;
+}
 
-  margin-bottom: 0;
-} */
+.btn-custom {
+  background-color: var(--purple);
+  border-color: var(--purple);
+
+  color: white;
+}
+
+.btn-custom:hover,
+.btn-custom:focus {
+  background-color: #584770;
+  border-color: #584770;
+  box-shadow: none;
+
+  color: white;
+}
+
+.btn-custom:active,
+.btn-custom:active:focus {
+  background-color: var(--purple);
+  border-color: var(--purple);
+  box-shadow: none;
+}
+
 
 #about {
   height: 400px;
-  background-color: var(--pink);
+  background-color: var(--teal);
 } 
 
 #insta {
