@@ -49,6 +49,12 @@ nav li.active {
   margin-bottom: -20px;
 }
 
+@media (max-width: 768px) {
+  nav li.active {
+    border: none;
+  }
+}
+
 nav img {
   max-height: 50px;
 }
