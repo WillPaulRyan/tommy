@@ -11,18 +11,19 @@
     <!-- Font Awesome Icons-->
     <script src="https://kit.fontawesome.com/f58e4a9c80.js"></script>
 
-    <!-- Varela Round font -->
-    <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
-
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Varela+Round&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="./static/tommy.css">
 
-    <link rel="shortcut icon" type="image/x-icon" href="./static/ice_cream_icon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="./static/icon.png" />
     
     <title>Tommy | Frozen Yogurt</title>
   </head>
+  <a name="top"></a>
   <body>
     <nav class="navbar navbar-expand-md navbar-dark" id="navbar" role="navigation">
-      <a class="navbar-brand py-0" href="#"><img src="./static/logo-clear.png"></a>
+      <a class="navbar-brand py-0" href="#"><img src="./static/logo.png"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -33,7 +34,10 @@
             <a class="nav-link py-0" href="#top">Início<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link py-0" href="#about">Nuestra Historia</a>
+            <a class="nav-link py-0" href="#">Ver Menú</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link py-0" href="#about">Quienes Somos</a>
           </li>
           <li class="nav-item">
             <a class="nav-link py-0" href="#contact">Contáctenos</a>
@@ -54,7 +58,7 @@
           <div class="carousel-caption" id="caption-1">
             <h1 class="display-2">Tommy Frozen Yogurt</h1>
             <h3>Serviendo a la comunidad de Rio Negro desde 2013</h3>
-            <a href="#" class="btn btn-custom btn-lg" role="button">Ver menú</button>
+            <a href="#" class="btn btn-custom btn-lg" role="button">Ver Menú</button>
             <a href="#contact" class="btn btn-outline-light btn-lg" role="button">Horário</a>
           </div>
         </div>
@@ -63,7 +67,7 @@
           <div class="carousel-caption" id="caption-2">
             <h1 class="display-2">Tus sabores favoritos</h1>
             <h3>Agradable para todo el mundo</h3>
-            <a href="#" class="btn btn-custom btn-lg" role="button">Ver menú</button>
+            <a href="#" class="btn btn-custom btn-lg" role="button">Ver Menú</button>
             <a href="#contact" class="btn btn-outline-light btn-lg" role="button">Horário</a>
           </div>
         </div>
@@ -72,7 +76,7 @@
           <div class="carousel-caption" id="caption-3">
             <h1 class="display-2">Ven con toda la familía</h1>
             <h3>¡Y disfruta!</h3>
-            <a href="#" class="btn btn-custom btn-lg" role="button">Ver menú</button>
+            <a href="#" class="btn btn-custom btn-lg" role="button">Ver Menú</button>
             <a href="#contact" class="btn btn-outline-light btn-lg" role="button">Horário</a>
           </div>
         </div>
@@ -81,15 +85,29 @@
 
 
     <section id="about">
-
+      <div class="container" id="container-1">
+        <img src="./static/images/examples/old_shop.png">
+        <div>
+          <h1>Desde nuestra familia, hasta la tuya</h1>
+          <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec lorem id elit posuere congue. Etiam ullamcorper eu nunc accumsan molestie. Integer ultricies a leo a bibendum. Nam id felis orci. Phasellus non iaculis purus.</h4>
+          <h4>Nullam dignissim rhoncus odio, lacinia sollicitudin est lobortis at. Mauris maximus viverra sapien quis porta. Aliquam interdum, turpis nec egestas varius, mauris metus euismod nisi, mattis consectetur mauris massa nec risus. Praesent dignissim est a dui pellentesque aliquam.</h4>
+        </div>
+      </div>
+      <div class="container" id="container-2">
+        <div>
+          <h1>Lorem ipsum dolor sit amet</h1>
+          <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec lorem id elit posuere congue. Etiam ullamcorper eu nunc accumsan molestie. Integer ultricies a leo a bibendum. Nam id felis orci. Phasellus non iaculis purus.</h4>
+          <h4>Nullam dignissim rhoncus odio, lacinia sollicitudin est lobortis at. Mauris maximus viverra sapien quis porta. Aliquam interdum, turpis nec egestas varius, mauris metus euismod nisi, mattis consectetur mauris massa nec risus. Praesent dignissim est a dui pellentesque aliquam.</h4>
+        </div>
+        <img src="./static/images/kid.jpg">
+      </div>
     </section>
 
-    <section id="insta">
-      <!--Juicer widget-->
+    <!-- <section id="insta">
       <script src="https://assets.juicer.io/embed.js" type="text/javascript"></script>
       <link href="https://assets.juicer.io/embed.css" media="all" rel="stylesheet" type="text/css" />
       <ul class="juicer-feed" data-feed-id="yoe_sandoval"></ul>
-    </section>
+    </section> -->
 
     <section id="contact">
       <div>
@@ -102,16 +120,20 @@
       </div>
       <div id="map">
         <h1>Ubicación</h1>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.85014210127!2d-75.39095020855105!3d6.150818431801966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5f77e33e8242df1!2stommy+frozen+yogurt!5e0!3m2!1sen!2sco!4v1561322885800!5m2!1sen!2sco" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <a href="https://goo.gl/maps/ZYfRGEXDKAFZiHwQ7" target="_blank">
+          <h3>Parque Comerciál Rio del Este</h3>
+          <h3>Calle 47 #70B-98: <span class="light">Locál 1058</span></h3>
+        </a>
+        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.85014210127!2d-75.39095020855105!3d6.150818431801966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5f77e33e8242df1!2stommy+frozen+yogurt!5e0!3m2!1sen!2sco!4v1561322885800!5m2!1sen!2sco" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe> -->
       </div>
       <div id="hours">
         <h1>Horário</h1>
-        <h4>12m-8pm - Todos los dias</h4>
+        <h3>12m - 8pm<span class="light">: Todos los dias</span></h3>
       </div>
     </section>
 
     <footer>
-      <p>&copy;2019<a href="#navbar">Tommy Frozen Yogurt</a></p>
+      <p>&copy;2019<a href="#top">Tommy Frozen Yogurt</a>| Rionegro, Antioquia</p>
     </footer>
 
     <!-- Optional JavaScript -->

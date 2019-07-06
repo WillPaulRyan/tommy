@@ -3,7 +3,8 @@
   /* custom colors */
   --teal: #7ebca4;
   --green: #b8db8a;
-  --pink: #eb6d71;
+  --strawberry: #ffe2e2;
+  --red: #eb6d71;
   --purple: #665283;
 }
 
@@ -18,16 +19,16 @@ html, body {
 }
 
 body {
-  font-family: 'Varela Round', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  /* font-weight options: 300, 400, 700 */
 }
 
 nav {
   border-top-style: solid;
   border-top-width: 2px;
-  border-top-color: var(--pink);
+  border-top-color: var(--red);
 
   background-color: var(--purple);
-  /* max-height: 15vh; */
 
 -webkit-box-shadow: inset 0px -8px 15px -6px rgba(0,0,0,0.37);
 -moz-box-shadow: inset 0px -8px 15px -6px rgba(0,0,0,0.37);
@@ -43,20 +44,25 @@ nav * {
 nav li.active {
   border-bottom-style: solid;
   border-bottom-width: 3px;
-  border-bottom-color: var(--pink);
+  border-bottom-color: var(--red);
   
   padding-bottom: 20px;
   margin-bottom: -20px;
 }
 
 @media (max-width: 768px) {
+  nav li {
+    padding-top: 5px;
+  }
+  
   nav li.active {
     border: none;
   }
 }
 
 nav img {
-  max-height: 50px;
+  height: 50px;
+  width: auto;
 }
 
 
@@ -78,7 +84,7 @@ nav img {
 
 #slides .carousel-caption h1 {
   /* font-size: 12vw; */
-
+  font-family: 'Varela Round', sans-serif;
   text-shadow: 1px 1px 15px #000;
 }
 
@@ -90,6 +96,7 @@ nav img {
 
 @media (max-width: 758px) {
   #slides .carousel-caption h1 {
+    font-family: 'Varela Round', sans-serif;
     font-size: 10vw;
     text-shadow: 1px 1px 15px #000;
   }
@@ -108,6 +115,7 @@ nav img {
 
 @media (max-width: 600px) {
   #slides .carousel-caption h1 {
+    font-family: 'Varela Round', sans-serif;
     font-size: 10vh;
     text-shadow: 1px 1px 15px #000;
   }
@@ -153,22 +161,79 @@ nav img {
 
 
 #about {
-  height: 400px;
-  background-color: var(--teal);
-} 
+  display: flex;
+  flex-direction: column;
 
-#insta {
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+  padding: 5vh;
+  
+  background-color: var(--teal);
+
+  -webkit-box-shadow: inset 0px 0px 18px -1px rgba(0,0,0,0.49);
+  -moz-box-shadow: inset 0px 0px 18px -1px rgba(0,0,0,0.49);
+  box-shadow: inset 0px 0px 18px -1px rgba(0,0,0,0.49);
+}
+
+#about > .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 4vh;
+  margin-left: -1.5vw;
+  margin-right: -1.5vw;
+
+}
+
+#about > .container > * {
+  margin-left: 1.5vw;
+  margin-right: 1.5vw;
+}
+
+#about h1 {
+  font-family: 'Varela Round', sans-serif;
+  color: var(--purple);
+}
+
+@media (max-width: 992px) {
+  #container-1 {
+    flex-wrap: wrap;
+  }
+
+  #container-2 {
+    flex-wrap: wrap-reverse;
+  }
+}
+
+#container-1 img {
+  min-height: 250px;
+  max-height: 40vh;
+  max-width: 50vh;
+  transform: rotate(-7deg);
+  border: 20px solid #DDDDCC;
+}
+
+#container-2 img {
+  min-height: 250px;
+  max-height: 40vh;
+  transform: rotate(7deg);
+}
+
+/* #insta {
   height: auto;
   width: 100%;
-}
+} */
 
 .referral {
   display: none !important;
 }
 
 #contact {
-  min-height: 400px;
-  padding: 15px;
+  padding-top: 5vh;
+  padding-bottom: 2vh;
   
   display: flex;
   align-items: stretch;
@@ -177,48 +242,65 @@ nav img {
   text-align: center;
 
   background-color: var(--purple);
-  color: rgb(255, 226, 226);
+  color: var(--strawberry);
 }
 
 #contact > div {
-  min-height: 100px;
   min-width: 400px;
-  margin: 15px;
+  margin: 2vh;
 }
 
 #contact h1 {
-  border-top: 1px solid #d5d5d5; 
-  border-bottom: 1px solid #d5d5d5;
+  font-family: 'Varela Round', sans-serif;
+  border-top: 1px solid #B6ABC6; 
+  border-bottom: 1px solid #B6ABC6;
+  margin-bottom: 25px;
+}
+
+#contact .light {
+  font-weight: 300;
 }
 
 #links {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  font-size: 3em;
+  justify-content: space-evenly;
 }
 
-#links {
-  font-size: 4em;
-  margin-top: 25px;
+.fa-instagram,
+.fa-facebook,
+.fa-whatsapp {
+  color: var(--strawberry);
 }
 
-
-.fa-instagram {
+.fa-instagram:hover {
   color: #3f729b;
 }
 
-.fa-facebook {
+.fa-facebook:hover {
   color: #3b5998;
 }
 
-.fa-whatsapp {
+.fa-whatsapp:hover {
   color: #25d366;
 }
 
-.fa-instagram:hover,
-.fa-facebook:hover,
-.fa-whatsapp:hover {
-  color: #d5d5d5;
+
+
+#map a {
+  color: var(--strawberry);
 }
+
+#map a:hover {
+  color: var(--red);
+  text-decoration: none;
+}
+
+#map .light{
+  color: var(--strawberry);
+}
+
 
 @media (max-width: 400px) {
   #map iframe {
@@ -234,6 +316,7 @@ footer {
   text-align: center;
   
   color: whitesmoke;
+  font-weight: 300;
 }
 
 footer * {
