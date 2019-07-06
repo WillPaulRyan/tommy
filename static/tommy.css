@@ -213,7 +213,9 @@ nav img {
   max-height: 40vh;
   max-width: 50vh;
   transform: rotate(-7deg);
+
   border: 20px solid #DDDDCC;
+  margin-bottom: 10px;
 }
 
 #container-2 img {
