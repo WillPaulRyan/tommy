@@ -30,6 +30,7 @@ nav {
 
   background-color: var(--purple);
 
+
 -webkit-box-shadow: inset 0px -8px 15px -6px rgba(0,0,0,0.37);
 -moz-box-shadow: inset 0px -8px 15px -6px rgba(0,0,0,0.37);
 box-shadow: inset 0px -8px 15px -6px rgba(0,0,0,0.37);
@@ -50,7 +51,7 @@ nav li.active {
   margin-bottom: -20px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   nav li {
     padding-top: 5px;
   }
@@ -331,4 +332,108 @@ footer * {
 footer *:hover {
   text-decoration: none;
   color: whitesmoke;
+}
+
+
+
+/* Menu */
+#menu {
+  background-color: var(--teal);
+
+  display: flex;
+  padding-top: 5vh;
+  padding-bottom: 3vh;
+
+  color: var(--purple);
+}
+
+#menu #menu-grid {
+  max-width: 1100px;
+  margin: auto;
+  
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu #menu-grid .grid-item {
+  min-width: 300px;
+  max-width: 400px;
+  max-height: 200px;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+#menu #menu-grid .grid-item img {
+  max-width: 200px;
+  max-height: 175px;
+}
+
+#menu #menu-grid .grid-item h1 {
+  margin-top: 5px;
+  
+  font-family: 'Varela Round', sans-serif;
+  font-size: 1.6em;
+  font-weight: 600;
+}
+
+#menu #menu-grid #yogurt img {
+  margin-left: -50px;
+}
+
+#menu #menu-grid #parfait img {
+
+}
+
+#menu #menu-grid #superbowl img {
+  margin-top: -20px;
+  margin-bottom: -15px;
+
+  -webkit-filter: brightness(120%); /* Safari 6.0 - 9.0 */
+  filter: brightness(120%);
+}
+
+#menu #menu-grid #sodas img {
+  margin-left: -45px;
+}
+
+#menu #menu-grid #jugos img {
+  max-width: 170px;
+}
+
+#menu #menu-grid #milo img {
+}
+
+#menu #menu-grid #brownie img {
+}
+
+#menu #menu-grid #alfajor img {
+}
+
+#menu #menu-grid #malteadas img {
+}
+
+#menu #menu-grid #affogato img {
+  margin-top: 10px;
+
+  max-width: 120px;
+}
+
+#menu #menu-grid #aromaticas img {
+  margin-bottom: -10px;
+}
+
+#menu #menu-grid #paletas img {
+  margin-bottom: -40px;
+
+  max-width: 400px;
+}
+
+#menu #menu-grid #salpicon img {
+  margin-bottom: -25px;
 }
