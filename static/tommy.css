@@ -402,6 +402,7 @@ footer *:hover {
   min-width: 200px;
   max-width: 300px;
   margin: auto;
+  margin-top: 20px;
 
   display: flex;
   flex-direction: column;
@@ -426,65 +427,12 @@ footer *:hover {
 }
 
 #menu #menu-grid .grid-item a:hover h1 {
-  /* border-top: 1px solid #a17de0;
-  border-bottom: 1px solid #a17de0; */
   color: #8966C9;
 }
 
-#menu #menu-grid #yogurt img {
-  margin-left: -40px;
-}
-
-#menu #menu-grid #parfait img {
-
-}
-
 #menu #menu-grid #superbowl img {
-  margin-top: -20px;
-  margin-bottom: -10px;
-
   -webkit-filter: brightness(120%); /* Safari 6.0 - 9.0 */
   filter: brightness(120%);
-}
-
-#menu #menu-grid #sodas img {
-  margin-left: -45px;
-}
-
-#menu #menu-grid #jugos img {
-  max-width: 170px;
-}
-
-#menu #menu-grid #milo img {
-}
-
-#menu #menu-grid #brownie img {
-}
-
-#menu #menu-grid #alfajor img {
-}
-
-#menu #menu-grid #malteadas img {
-}
-
-#menu #menu-grid #affogato img {
-  margin-top: 10px;
-
-  max-width: 120px;
-}
-
-#menu #menu-grid #aromaticas img {
-  margin-bottom: -10px;
-}
-
-#menu #menu-grid #paletas img {
-  margin-bottom: -40px;
-
-  max-width: 400px;
-}
-
-#menu #menu-grid #salpicon img {
-  margin-bottom: -25px;
 }
 
 
