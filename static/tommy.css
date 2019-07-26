@@ -288,7 +288,7 @@ nav img {
   display: flex;
   align-items: stretch;
   flex-wrap: wrap-reverse;
-  justify-content: space-evenly;
+  justify-content: space-around;
   text-align: center;
 
   background-color: var(--purple);
@@ -296,8 +296,6 @@ nav img {
 }
 
 #contact > div {
-  flex-basis: 0%;
-
   min-width: 340px;
   margin: 2vh;
 }
@@ -313,7 +311,7 @@ nav img {
   display: flex;
   flex-direction: row;
   font-size: 2.6em;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .fa-instagram,
