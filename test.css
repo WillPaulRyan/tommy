@@ -13,7 +13,7 @@
 }
 
 /* Older browsers */
-html { font-size: 16px; }
+html { font-size: 16px;   overflow-x: hidden;}
 
 /* Modern browsers only need this one */
 @media screen and (min-width: 25em){
@@ -138,6 +138,7 @@ nav {
   }
 
   #hamburger {
+    margin-top: 15px;
     margin-left: auto;
     
     cursor: pointer;
@@ -252,7 +253,7 @@ nav {
   }
 
   #bowl {
-    width: 250px;
+    width: calc(200px + 5vw);
   }
 
   #hero-text {
@@ -277,15 +278,7 @@ nav {
   margin: 20px auto 20px auto;
 }
 
-#coffee {
-  height: 100px;
-}
-
-#island {
-  height: 100px;
-}
-
-#money {
+.icon-container img {
   height: 100px;
 }
 
@@ -299,6 +292,11 @@ nav {
   border-right: 2px solid var(--green);
 }
 
+@media (max-width: 478px) {
+  .icon-container img {
+    height: 20vw;
+  }
+}
 
 
 #photos {
