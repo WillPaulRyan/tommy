@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Righteous&display=swap" rel="stylesheet">
+
+
+    <!--Animate On Scroll-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <title>Tommy Frozen Yogurt</title>
+  <link rel="stylesheet" href="test.css" type="text/css">
+  </head>
+  <body>
+    <section id="hero">
+        <div data-aos="fade-right" data-aos-delay="500" 
+            data-aos-duration="1500" data-aos-easings="ease-out-cubic">
+          <img id="bowl" src="./static/images/bowl-green.png">
+        </div>
+        <div id="hero-text">
+          <div id="title" data-aos="fade-left" 
+            data-aos-delay="2000" data-aos-duration="2000"
+            data-aos-easings="ease-out-cubic">
+            <h1>Tommy Frozen Yogurt</h1>
+            <h3>Helado para Rio Negro</h3>
+          </div>
+          <div id="btn-container" data-aos="fade-up" data-aos-delay="3000"
+            data-aos-duration="2000" data-aos-easings="ease-out-cubic">
+            <a class="btn" href="#">Menú</a>
+          </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
