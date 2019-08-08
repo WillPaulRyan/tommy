@@ -10,6 +10,7 @@
   --green-dark: #95b191;
 
   color: #000;
+  overflow-x: hidden;
 }
 
 ::-moz-focus-inner {border:0;}
