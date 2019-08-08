@@ -55,7 +55,9 @@ body {
   align-items: center;
 
   width: 100%;
-  min-height: 90vh;
+  
+  min-height: 80vh;
+  max-height: 90vh;
 
   background: repeating-linear-gradient(
     45deg,
@@ -73,6 +75,9 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  position: relative;
+  z-index: 100;
 }
 
 #nav-list a {
@@ -191,15 +196,16 @@ nav {
 
 #hero-text h1 {
   font-size: 1.5em;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 #hero-text h3 {
-  margin-top: -4vh;
   font-size: 1em;
 }
 
 #hero #btn-container {
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 #hero .btn {
@@ -243,11 +249,10 @@ nav {
 @media (max-width: 600px) {
   #hero-items {
     flex-direction: column;
-    margin-top: -300px;
   }
 
   #bowl {
-    width: 50vw;
+    width: 250px;
   }
 
   #hero-text {
@@ -258,33 +263,30 @@ nav {
 
 #icons {
   display: flex;
-  justify-content: space-around;
 
   border-top: 2px solid var(--green-dark);
   border-bottom: 2px solid var(--green-dark);
-
-  overflow-y: hidden;
 }
 
 .icon-container {
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   
-  width: 300px;
-  margin: 30px auto 30px auto;
+  margin: 20px auto 20px auto;
 }
 
 #coffee {
-  max-height: 100px;
+  height: 100px;
 }
 
 #island {
-  max-height: 100px;
+  height: 100px;
 }
 
 #money {
-  max-height: 100px;
+  height: 100px;
 }
 
 .icon-container h5 {
