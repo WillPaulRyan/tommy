@@ -4,9 +4,7 @@ function navToggle() {
   
   nav.classList.toggle("nav-active");
   hamburger.classList.toggle("active");
-  document.body.classList.toggle("overflow-off");
-
-  
+  document.documentElement.classList.toggle("overflow-off");
 }
 
 function navReset() {
@@ -15,5 +13,5 @@ function navReset() {
   
   nav.classList.remove("nav-active");
   hamburger.classList.remove("active");
-  document.body.classList.remove("overflow-off")
+  document.documentElement.classList.remove("overflow-off")
 }

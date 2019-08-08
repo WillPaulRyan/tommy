@@ -13,7 +13,7 @@
 }
 
 /* Older browsers */
-html { font-size: 16px;   overflow-x: hidden;}
+html { font-size: 16px; overflow-x: hidden}
 
 /* Modern browsers only need this one */
 @media screen and (min-width: 25em){
@@ -40,7 +40,6 @@ h3, h4, h5, h6, p, a {
 
 body {
   margin: 0;
-  overflow-x: hidden;
 }
 
 .overflow-off {
@@ -122,7 +121,7 @@ nav {
     height: 100vh;
     margin-top: 5vh;
     
-    transition: height .5s ease-in-out;
+    transition: height .7s linear;
   }
 
   #nav-list a {
@@ -152,9 +151,9 @@ nav {
     display: block;
     height: 5px;
     width: 50px;
-    background: #fff;
+    background: black;
     margin: 10px auto;
-    transition: all .7s ease;
+    transition: all .7s ease-in;
   }
 
   .center {
@@ -225,7 +224,7 @@ nav {
   background-size: 200% 100%;
   background-position: right bottom;
   
-  transition: background-position .5s ease-in-out;
+  transition: background-position .7s ease-in-out;
 }
 
 #hero .btn:hover {
