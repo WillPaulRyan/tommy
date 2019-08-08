@@ -55,7 +55,7 @@ body {
   align-items: center;
 
   width: 100%;
-  min-height: 80vh;
+  min-height: 90vh;
 
   background: repeating-linear-gradient(
     45deg,
@@ -174,15 +174,15 @@ nav {
 }
 
 #bowl-container {
-
+  margin-top: -50px;
 }
 
 #bowl {
   margin-right: 40px; 
 
-  min-height: 200px;
-  height: 40vmin;
-  max-height: 400px;
+  min-width: 100px;
+  width: 40vmin;
+  max-width: 300px;
   transform: rotate(-10deg);
 }
 
@@ -240,4 +240,67 @@ nav {
   color: #000;
 }
 
+@media (max-width: 600px) {
+  #hero-items {
+    flex-direction: column;
+    margin-top: -300px;
+  }
 
+  #bowl {
+    width: 50vw;
+  }
+
+  #hero-text {
+    margin-top: -15vh;
+    z-index: 1;
+  }
+}
+
+#icons {
+  display: flex;
+  justify-content: space-around;
+
+  border-top: 2px solid var(--green-dark);
+  border-bottom: 2px solid var(--green-dark);
+
+  overflow-y: hidden;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  width: 300px;
+  margin: 30px auto 30px auto;
+}
+
+#coffee {
+  max-height: 100px;
+}
+
+#island {
+  max-height: 100px;
+}
+
+#money {
+  max-height: 100px;
+}
+
+.icon-container h5 {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.middle {
+  border-left: 2px solid var(--green);
+  border-right: 2px solid var(--green);
+}
+
+
+
+#photos {
+  width: 100%;
+  min-height: 40vh;
+  background-color: var(--purple);
+}
