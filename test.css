@@ -19,7 +19,7 @@ h1 {
   font-family: 'Righteous', cursive;
 }
 
-h3, h4, h5, h6, p {
+h3, h4, h5, h6, p, a {
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -30,6 +30,7 @@ body {
 #hero {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 
@@ -45,6 +46,60 @@ body {
     var(--purple-dark) 80px);
 }
 
+nav {
+  align-self: flex-start;
+  width: 100%;
+  margin-top: 10px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.navbar-toggle {
+  display: none;
+}
+
+.nav-links {
+  
+}
+
+#page-logo {
+  margin-left: 20px;
+}
+
+#page-logo img {
+  height: 70px;
+}
+
+#js-menu {
+  display: flex;
+  flex-direction: row;
+}
+
+#js-menu {
+  margin-left: auto;
+  list-style: none;
+}
+
+#js-menu a {
+  margin-right: 3vw;
+
+  text-decoration: none;
+  color: #000;
+  font-size: 1.2rem;
+}
+
+
+#hero-items {
+  margin-top: -30vh;
+
+  display: flex;
+}
+
+#bowl-container {
+
+}
 
 #bowl {
   margin-right: 40px; 
@@ -56,7 +111,6 @@ body {
 }
 
 #hero-text {
-  margin-top: -30px;
 }
 
 #hero-text h1 {

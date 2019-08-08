@@ -6,29 +6,50 @@
 
     <!--Animate On Scroll-->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/f58e4a9c80.js"></script>
+
     <link rel="stylesheet" href="test.css" type="text/css">
     <link rel="shortcut icon" type="image/x-icon" href="./static/icon.png" />
     <title>Tommy Frozen Yogurt</title>
   </head>
   <body>
     <section id="hero">
-        <div data-aos="fade-right" data-aos-delay="500" 
+      <nav>
+        <!-- Hamburger menu w/ toggle js -->
+        <span class="navbar-toggle" id="js-navbar-toggle">
+          <i class="fas fa-bars" onclick="menuExpand()"></i>
+        </span>
+  
+        <a href="#" class="nav-link" id="page-logo"><img src="./static/logo.png"></a>
+        
+        <ul id="js-menu">
+          <li><a href="#" class="nav-link active">Home</a></li>
+          <li><a href="#" class="nav-link">About</a></li>
+          <li><a href="#" class="nav-link">Projects</a></li>
+          <li><a href="#" class="nav-link">Connect</a></li>
+        </ul>
+      </nav>
+
+      <div id="hero-items">
+        <div id="bowl-container" data-aos="fade-right" data-aos-delay="500" 
             data-aos-duration="1500" data-aos-easings="ease-out-cubic">
           <img id="bowl" src="./static/images/bowl-green.png">
-        </div>
+        </div id="hero-items">
         <div id="hero-text">
           <div id="title" data-aos="fade-left" 
             data-aos-delay="2000" data-aos-duration="2000"
             data-aos-easings="ease-out-cubic">
             <h1>Tommy Frozen Yogurt</h1>
-            <h3>Helado para Rio Negro</h3>
+            <h3>Helado para Rionegro</h3>
           </div>
           <div id="btn-container" data-aos="fade-up" data-aos-delay="3000"
             data-aos-duration="2000" data-aos-easings="ease-out-cubic">
             <a class="btn" href="#">Menú</a>
           </div>
         </div>
+      </div>
     </section>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
