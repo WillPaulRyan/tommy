@@ -331,7 +331,7 @@ nav {
 }
 
 
-#superbowl {
+#pops {
   order: 2;
 }
 
@@ -364,7 +364,7 @@ nav {
     display: none;
   }
 
-  #superbowl {
+  #pops {
     order: 0;
   }
 }
