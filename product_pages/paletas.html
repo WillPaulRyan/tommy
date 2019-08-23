@@ -14,6 +14,9 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=KoHo:600|Lato:300,400&display=swap" rel="stylesheet">    
     
+    <!-- Slick Carousel -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
     <link rel="stylesheet" href="../static/tommy.css">
 
     <link rel="shortcut icon" type="image/x-icon" href="../static/icon.png" />
@@ -50,20 +53,22 @@
       </div>
     </nav>
 
-    <section class="product container-fluid">
-      <div class="row">
-        <div class="col-xs-12 col-md-6">
-          <img src="../static/images/productos/paletas500.png" class="img-fluid" alt="">
+    <section id="paletas-product" class="product">
+      <div class="slider one-time">
+        <div class="slide" id="refrescantes">
+          <h1>Refrescantes</h1>
         </div>
-        <div class="col-xs-12 col-md-6">
-          <h1>Paletas Artesenales</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ultrices orci a lacinia hendrerit. Quisque scelerisque tortor augue, ac laoreet enim mollis in. Nam gravida aliquet neque eget dictum. Sed id maximus dolor. Curabitur sagittis viverra ante, in mollis dolor auctor non. Aenean vehicula commodo neque vel suscipit. Nulla quis ultrices est. Sed posuere, augue in accumsan blandit, urna magna semper erat, eu efficitur risus neque ut odio.</p>
+        <div class="slide" id="cremosas">
+          <h1>Cremosas</h1>
         </div>
-      </div>
-      <br>
-      <div class="row">
-        <div class="col text-center">
-          <a href="../menu.html" class="btn btn-custom btn-lg" role="button">Regresar al Menú</a>
+        <div class="slide" id="crunchy">
+          <h1>Crunchy</h1>
+        </div>
+        <div class="slide" id="fantasia">
+
+        </div>
+        <div class="slide" id="sin-azucar">
+
         </div>
       </div>
     </section>
@@ -93,6 +98,20 @@
     <footer>
       <p class="light">&copy;2019<a href="index.html">Tommy Frozen Yogurt</a>| Rionegro, Antioquia</p>
     </footer>
+
+    <!-- Slick Carousel -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('.one-time').slick({
+          dots: true,
+          infinite: true,
+          slidesToShow: 1,
+          adaptiveHeight: true,
+          arrows: true
+        });	
+      });
+    </script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
