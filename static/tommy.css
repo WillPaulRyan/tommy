@@ -565,19 +565,6 @@ footer a:hover {
   left: 5%;
 }
 
-#image-blocks #soda {
-  background-image: url('./images/tommy_pixabay/soda_bg.jpg');
-  background-size: cover;
-  background-position-y: 60%;
-}
-
-#image-blocks #soda .block-text {
-  position: relative;
-  top: 10%;
-  left: 60%;
-  width: 35%;
-}
-
 #image-blocks #paletas {
   background-image: url('./images/tommy_pixabay/paletas_bg.jpg');
   background-size: cover;
@@ -593,6 +580,89 @@ footer a:hover {
   text-shadow: 1px 1px 2px black;
 }
 
+#image-blocks #parfait {
+  background-image: url('./images/tommy_pixabay/parfait_bg.jpg');
+  background-size: cover;
+  background-position-y: 70%;
+}
+
+#image-blocks #parfait .block-text {
+  position: relative;
+  top: 10%;
+  left: 5%;
+  width: 70%;
+  color: black;
+  /* color: rgb(255, 255, 255, .7); */
+  text-shadow: 1px 1px 2px white;
+}
+
+#image-blocks #parfait .block-text a {
+  text-shadow: none;
+}
+
+#image-blocks #malteadas {
+  background-image: url('./images/tommy_pixabay/smoothie_bg.jpg');
+  background-size: cover;
+  background-position-y: 59%;
+}
+
+#image-blocks #malteadas .block-text {
+  position: relative;
+  top: 10%;
+  left: 5%;
+  width: 70%;
+  color: rgb(255, 255, 255, .9);
+  text-shadow: 1px 1px 2px black;
+}
+
+#image-blocks #malteadas .block-text h4 {
+  margin-bottom: 20px;
+}
+
+#image-blocks #malteadas .block-text ul {
+  margin-top: 10px;
+}
+
+#image-blocks #alfajor {
+  background-image: url('./images/tommy_pixabay/alfajor_bg.jpg');
+  background-size: cover;
+  background-position-y: 40%;
+}
+
+#image-blocks #alfajor .block-text {
+  position: relative;
+  top: 10%;
+  left: 10%;
+  width: 65%;
+}
+
+#image-blocks #brownie {
+  background-image: url('./images/tommy_pixabay/brownie_bg.jpg');
+  background-size: cover;
+  background-position-y: 50%;
+}
+
+#image-blocks #brownie .block-text {
+  position: relative;
+  top: 10%;
+  left: 10%;
+  width: 65%;
+  color: rgb(255, 255, 255, .8);
+  text-shadow: 1px 1px 2px black;
+}
+
+#image-blocks #soda {
+  background-image: url('./images/tommy_pixabay/soda_bg.jpg');
+  background-size: cover;
+  background-position-y: 60%;
+}
+
+#image-blocks #soda .block-text {
+  position: relative;
+  top: 10%;
+  left: 60%;
+  width: 35%;
+}
 
 
 /* Product Pages */
