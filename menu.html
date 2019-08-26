@@ -7,47 +7,38 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
     <!-- Font Awesome Icons-->
     <script src="https://kit.fontawesome.com/f58e4a9c80.js"></script>
-
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=KoHo:700|Lato:300,400&display=swap" rel="stylesheet">    
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Righteous&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Concert+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Concert+One|Lato:300,400&display=swap" rel="stylesheet">
 
-    
     <link rel="stylesheet" href="./static/tommy.css">
-
     <link rel="shortcut icon" type="image/x-icon" href="./static/icon.png" />
-    
+    <meta name="theme-color" content="#eb6d71"/>
     <title>Menú | Tommy Frozen Yogurt</title>
+    <meta name="Description" content="Vea nuestros productos">
   </head>
-  <a name="top"></a>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark" id="navbar" role="navigation">
-      <a class="navbar-brand py-0" href="index.html"><img src="./static/logo.png"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-md navbar-dark">
+      <a class="navbar-brand" href="index.html" aria-label="Inicio / Home">
+        <img src="./static/logo.svg" width="30" height="30" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-    
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto text-right">
           <li class="nav-item">
-            <a class="nav-link py-0" href="index.html#top">Inicio<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="index.html">Inicio</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link py-0" href="#">Productos</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Opportunidades</a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Franquicias</a>
-              <a class="dropdown-item" href="#">Trabaja con Tommy</a>
-            </div>
+            <a class="nav-link" href="#">Productos <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link py-0" href="index.html#contact">Contáctenos</a>
+            <a class="nav-link" href="#">Eventos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contáctanos</a>
           </li>
         </ul>
       </div>
@@ -111,9 +102,43 @@
           <h4>Pídelo con helado de yogurt natural, con el helado especial de la semana, o lo mejor, con los dos sabores combinados</h4>
         </div>
       </div>
+      <div id="salpicon" class="block">
+        <div class="block-text">
+          <h1>Salpicones</h1>
+          <h4>Brownie caliente que se derrite en tu boca!</h4>
+          <h4>Pídelo con helado de yogurt natural, con el helado especial de la semana, o lo mejor, con los dos sabores combinados</h4>
+        </div>
+      </div>
+      <div id="affogato" class="block">
+        <div class="block-text">
+          <h1>Affogato</h1>
+          <h4>Brownie caliente que se derrite en tu boca!</h4>
+          <h4>Pídelo con helado de yogurt natural, con el helado especial de la semana, o lo mejor, con los dos sabores combinados</h4>
+        </div>
+      </div>
+      <div id="frappe" class="block">
+        <div class="block-text">
+          <h1>Cafés Frappé</h1>
+          <h4>Brownie caliente que se derrite en tu boca!</h4>
+          <a href="./product_pages/paletas.html" class="btn btn-custom btn-lg" role="button">Ver más</a>
+        </div>
+      </div>
       <div id="soda" class="block">
         <div class="block-text">
           <h1>Sodas Saborizadas</h1>
+          <h4>Excelente opción para que reemplaces las bebidas azucaradas.</h4>
+          <h4>Pídela de:
+            <ul>
+              <li>Mango biche</li>
+              <li>Frutos rojos</li>
+              <li>Frutos amarillos</li>
+            </ul>
+          </h4>
+        </div>
+      </div>
+      <div id="aromaticas" class="block">
+        <div class="block-text">
+          <h1>Infusiones Aromáticas</h1>
           <h4>Excelente opción para que reemplaces las bebidas azucaradas.</h4>
           <h4>Pídela de:
             <ul>
@@ -128,29 +153,31 @@
 
     <section id="contact">
       <div>
-        <h2>Contáctenos</h2>
-        <div id="links">
-          <a href="https://api.whatsapp.com/send?phone=573123302268"><i class="fab fa-whatsapp"></i></a>
-          <a href="https://www.instagram.com/tommyfrozenyogurt/"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.facebook.com/tommyfrozenyogurt/"><i class="fab fa-facebook"></i></a>
+        <div class="contact-section">
+          <h2>Contáctenos</h2>
+          <div id="links">
+            <a href="https://api.whatsapp.com/send?phone=573123302268" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/tommyfrozenyogurt/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/tommyfrozenyogurt/" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          </div>
+        </div>
+        <div class="contact-section margin-bottom" id="map">
+          <h2>Ubicación</h2>
+          <a href="https://goo.gl/maps/ZYfRGEXDKAFZiHwQ7" target="_blank" rel="noreferrer">
+            <h4>Parque Comerciál Rio del Este</h4>
+            <h4>Calle 47 #70B-98: <span class="light">Locál 1058</span></h4>
+          </a>
+        </div>
+        <div class="contact-section margin-bottom" id="hours">
+          <h2>Horário</h2>
+          <h4>12m - 8pm<span class="light">: Todos los dias</span></h4>
         </div>
       </div>
-      <div id="map">
-        <h2>Ubicación</h2>
-        <a href="https://goo.gl/maps/ZYfRGEXDKAFZiHwQ7" target="_blank">
-          <h4>Parque Comerciál Rio del Este</h4>
-          <h4>Calle 47 #70B-98: <span class="light">Locál 1058</span></h4>
-        </a>
-        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.85014210127!2d-75.39095020855105!3d6.150818431801966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5f77e33e8242df1!2stommy+frozen+yogurt!5e0!3m2!1sen!2sco!4v1561322885800!5m2!1sen!2sco" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe> -->
-      </div>
-      <div id="hours">
-        <h2>Horário</h2>
-        <h4>12m - 8pm<span class="light">: Todos los dias</span></h4>
-      </div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.85014210127!2d-75.39095020855105!3d6.150818431801966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5f77e33e8242df1!2stommy+frozen+yogurt!5e0!3m2!1sen!2sco!4v1561322885800!5m2!1sen!2sco" frameborder="0" style="border:0" allowfullscreen></iframe>
     </section>
 
     <footer>
-      <p class="light">&copy;2019<a href="index.html">Tommy Frozen Yogurt</a>| Rionegro, Antioquia</p>
+      <p class="light">&copy;2019 <a href="index.html">Tommy Frozen Yogurt</a> | Rionegro, Antioquia</p>
     </footer>
 
     <div id="social-bar">
@@ -160,7 +187,7 @@
         <a href="https://api.whatsapp.com/send?phone=573123302268"><i class="fab fa-whatsapp"></i></a>
       </div>
     </div>
-
+  
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

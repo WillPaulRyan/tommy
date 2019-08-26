@@ -72,11 +72,11 @@ nav li a {
   -webkit-filter: contrast(30%); /* Safari 6.0 - 9.0 */
   filter: contrast(30%);
 
-  -webkit-filter: blur(2px) contrast(30%);
-  -moz-filter: blur(2px) contrast(30%);
-  -o-filter: blur(2px) contrast(30%);
-  -ms-filter: blur(2px) contrast(30%);
-  filter: blur(2px) contrast(30%);
+  -webkit-filter: contrast(30%);
+  -moz-filter: contrast(30%);
+  -o-filter: contrast(30%);
+  -ms-filter: contrast(30%);
+  filter: contrast(30%);
 }
 
 .carousel-caption {
@@ -211,10 +211,20 @@ nav li a {
 }
 
 #photos #family {
-  background-image: url('./images/family_scaled.jpg');
+  background-image: url('./images/family500.jpg');
   background-size: cover;
   background-position-y: 45%;
 }
+
+
+@media (min-width: 2001px) {
+  #photos #family {
+    background-image: url(./images/family.jpg);
+  }
+}
+
+
+
 
 #photos #family .block-text {
   position: relative;
@@ -226,10 +236,20 @@ nav li a {
 }
 
 #photos #ice-cream {
-  background-image: url('./images/tommy_pixabay/gooseberry_table_yogurt.jpg');
+  background-image: url('./images/tommy_pixabay/gooseberry500.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: 30%;
+}
+
+@media (min-width: 501px) {
+  #photos #family {
+    background-image: url(./images/family2000.jpg);
+  }
+
+  #photos #ice-cream {
+    background-image: url(./images/tommy_pixabay/gooseberry.jpg);
+  }
 }
 
 #photos #ice-cream .block-text {
@@ -511,7 +531,7 @@ footer a:hover {
 
 /* Menu */
 #image-blocks .block {
-  height: 400px;
+  height: 60vh;
 }
 
 #image-blocks .block-text h1 {
@@ -529,19 +549,20 @@ footer a:hover {
 }
 
 #image-blocks #yogurt {
-  background-image: url('./images/tommy_pixabay/yogurt2_bg.jpg');
+  background-image: url('./images/tommy_pixabay/yogurt_cropped500.jpg');
   background-size: cover;
   background-position-y: 60%;
 }
 
+
 #image-blocks #yogurt .block-text {
   position: relative;
   top: 30%;
-  left: 5%;
+  left: 45%;
 }
 
 #image-blocks #paletas {
-  background-image: url('./images/tommy_pixabay/paletas_bg.jpg');
+  background-image: url('./images/tommy_pixabay/paletas_cropped500.jpg');
   background-size: cover;
   background-position-y: 60%;
 }
@@ -556,7 +577,7 @@ footer a:hover {
 }
 
 #image-blocks #parfait {
-  background-image: url('./images/tommy_pixabay/parfait_bg.jpg');
+  background-image: url('./images/tommy_pixabay/parfait500.jpg');
   background-size: cover;
   background-position-y: 70%;
 }
@@ -576,7 +597,7 @@ footer a:hover {
 }
 
 #image-blocks #malteadas {
-  background-image: url('./images/tommy_pixabay/smoothie_bg.jpg');
+  background-image: url('./images/tommy_pixabay/smoothie_cropped500.jpg');
   background-size: cover;
   background-position-y: 59%;
 }
@@ -599,7 +620,7 @@ footer a:hover {
 }
 
 #image-blocks #alfajor {
-  background-image: url('./images/tommy_pixabay/alfajor_bg.jpg');
+  background-image: url('./images/tommy_pixabay/alfajor_cropped500.jpg');
   background-size: cover;
   background-position-y: 40%;
 }
@@ -612,7 +633,7 @@ footer a:hover {
 }
 
 #image-blocks #brownie {
-  background-image: url('./images/tommy_pixabay/brownie_bg.jpg');
+  background-image: url('./images/tommy_pixabay/brownie_cropped500.jpg');
   background-size: cover;
   background-position-y: 50%;
 }
@@ -620,25 +641,120 @@ footer a:hover {
 #image-blocks #brownie .block-text {
   position: relative;
   top: 10%;
-  left: 10%;
-  width: 65%;
+  left: 40%;
+  width: 50%;
+  color: rgb(255, 255, 255, .8);
+  text-shadow: 1px 1px 2px black;
+}
+
+#image-blocks #salpicon {
+  background-image: url('./images/tommy_pixabay/salpicon500.jpg');
+  background-size: cover;
+  background-position-y: 55%;
+}
+
+#image-blocks #salpicon .block-text {
+  position: relative;
+  top: 50%;
+  left: 5%;
+  width: 70%;
+  color: rgb(255, 255, 255, .8);
+  text-shadow: 1px 1px 2px black;
+}
+
+#image-blocks #affogato {
+  background-image: url('./images/tommy_pixabay/affogato_cropped500.jpg');
+  background-size: cover;
+  background-position-y: 85%;
+}
+
+#image-blocks #affogato .block-text {
+  position: relative;
+  top: 10%;
+  left: 55%;
+  width: 30%;
+  color: rgb(255, 255, 255, .8);
+  text-shadow: 1px 1px 2px black;
+}
+
+#image-blocks #frappe {
+  background-image: url('./images/tommy_pixabay/frappe2_cropped500.jpg');
+  background-size: cover;
+  background-position-y: 55%;
+}
+
+#image-blocks #frappe .block-text {
+  position: relative;
+  top: 10%;
+  left: 5%;
+  width: 60%;
   color: rgb(255, 255, 255, .8);
   text-shadow: 1px 1px 2px black;
 }
 
 #image-blocks #soda {
-  background-image: url('./images/tommy_pixabay/soda_bg.jpg');
+  background-image: url('./images/tommy_pixabay/soda_cropped500.jpg');
   background-size: cover;
   background-position-y: 60%;
 }
 
 #image-blocks #soda .block-text {
   position: relative;
-  top: 10%;
-  left: 60%;
+  top: 25%;
+  left: 50%;
   width: 35%;
 }
 
+#image-blocks #aromaticas {
+  background-image: url('./images/tommy_pixabay/aromatica_cropped500.jpg');
+  background-size: cover;
+  background-position-y: 60%;
+}
+
+#image-blocks #aromaticas .block-text {
+  position: relative;
+  top: 15%;
+  left: 60%;
+  width: 35%;
+  color: rgb(255, 255, 255, .8);
+  text-shadow: 1px 1px 2px black;
+}
+
+@media (min-width: 501px) {
+  #image-blocks #yogurt {
+    background-image: url('./images/tommy_pixabay/yogurt_cropped.jpg');
+  }
+  #image-blocks #paletas {
+    background-image: url('./images/tommy_pixabay/paletas_cropped.jpg');
+  }
+  #image-blocks #parfait {
+    background-image: url('./images/tommy_pixabay/parfait.jpg');
+  }
+  #image-blocks #malteadas {
+    background-image: url('./images/tommy_pixabay/smoothie_cropped.jpg');
+  }
+  #image-blocks #alfajor {
+    background-image: url('./images/tommy_pixabay/alfajor_cropped.jpg');
+  }
+  #image-blocks #brownie {
+    background-image: url('./images/tommy_pixabay/brownie_cropped.jpg');
+  }
+  #image-blocks #salpicon {
+    background-image: url('./images/tommy_pixabay/salpicon.jpg');
+  }
+  #image-blocks #affogato {
+    background-image: url('./images/tommy_pixabay/affogato_cropped.jpg');
+  }
+  #image-blocks #frappe {
+    background-image: url('./images/tommy_pixabay/frappe2_cropped.jpg');
+  }
+  #image-blocks #soda {
+    background-image: url('./images/tommy_pixabay/soda_cropped.jpg');
+  }
+  #image-blocks #aromaticas {
+    background-image: url('./images/tommy_pixabay/aromatica_cropped.jpg');
+  }
+}
 
 /* Product Pages */
 .product { 
