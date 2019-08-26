@@ -45,7 +45,8 @@ nav {
   font-size: 1.5rem;
 }
 
-nav li a {
+nav li {
+  margin-left: 4vw;
   font-size: 20px;
 }
 
@@ -688,8 +689,7 @@ footer a:hover {
   top: 10%;
   left: 5%;
   width: 60%;
-  color: rgb(255, 255, 255, .8);
-  text-shadow: 1px 1px 2px black;
+  color: black
 }
 
 #image-blocks #soda {
