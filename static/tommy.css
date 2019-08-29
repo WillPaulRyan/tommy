@@ -1,11 +1,19 @@
 :root {
-  
   /* custom colors */
   --teal: #7ebca4;
+  /*RGB => 126, 188, 164 */
+
   --green: #b8db8a;
+  /*RGB => 184, 219, 138 */
+
   --strawberry: #ffe2e2;
+  /*RGB => 255, 226, 226 */
+
   --red: #eb6d71;
+  /*RGB => 235, 109, 113 */
+
   --purple: #665283;
+  /*RGB => 102, 82, 131 */
 }
 
 html {
@@ -86,19 +94,126 @@ nav li {
 }
 
 #slides h1 {
-  font-size: 3em;
+  font-size: 4rem;
   text-shadow: 1px 1px 15px #000;
 }
 
 #slides h3 {
-  font-size: 1.8em;
-  letter-spacing: 3px
+  font-size: 2rem;
+  letter-spacing: 1px
 }
 
 #slides a {
   margin-left: 5px;
   margin-right: 5px;
-  font-size: .8em;
+  font-size: 1.2rem;
+}
+
+
+@media (max-height: 450px) {
+  #slides, #slides img {
+    height: 400px;
+  }
+  
+  .carousel-caption {
+    top: 15%;
+    bottom: auto;
+  }
+
+  #slides h1 {
+    font-size: 3.5rem;
+  }
+  
+  #slides h3 {
+    font-size: 2rem;
+  }
+  
+  #slides a {
+    font-size: 1rem;
+  }
+
+  .btn {
+    margin-top: .5rem;
+    border-radius: .4rem;
+  }
+}
+
+@media (min-width: 500px)
+  and (min-height: 451px) {
+  #slides, #slides img {
+    min-height: 600px;
+  }
+  
+  .carousel-caption {
+    top: 5%;
+    bottom: auto;
+  }  
+
+  #slides h1 {
+    font-size: 5rem;
+  }
+  
+  #slides h3 {
+    font-size: 3rem;
+  }
+  
+  #slides a {
+    font-size: 2rem;
+  }
+
+  .btn {
+    margin-top: .5rem;
+    border-radius: .6rem;
+  }
+}
+
+@media (min-width: 1000px)
+  and (min-height: 451px) {
+  .carousel-caption {
+    top: 5%;
+    bottom: auto;
+  }  
+
+  #slides h1 {
+    font-size: 7rem;
+  }
+  
+  #slides h3 {
+    font-size: 4rem;
+  }
+  
+  #slides a {
+    font-size: 2rem;
+  }
+
+  .btn {
+    margin-top: .5rem;
+    border-radius: .6rem;
+  }
+}
+
+@media (min-width: 1800px) {
+  .carousel-caption {
+    top: 20%;
+    bottom: auto;
+  }  
+
+  #slides h1 {
+    font-size: 6vw;
+  }
+  
+  #slides h3 {
+    font-size: 4vw;
+  }
+  
+  #slides a {
+    font-size: 2vw;
+  }
+
+  .btn {
+    margin-top: .5rem;
+    border-radius: .6rem;
+  }
 }
 
 .btn {
@@ -165,55 +280,118 @@ nav li {
   border-right: 2px solid var(--green);
 }
 
+
 #photos {
   width: 100%
 }
 
 .block {
   width: 100%;
-  height: 50vh;
+  min-height: 500px;
+  height: 60vh;
+  
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
 }
 
-.photo-text {
-  margin: 15px;
+.block-text {
+  margin: auto;  
+  padding: 1rem 1.5rem;
+  width: 85%;
+  max-width: 500px;
+  
+  color: rgb(255,255,255,.9);
+  border-radius: .3rem;
 }
 
-#photos .block-text h1{
-  text-decoration: none;
-  font-size: 1.8em;
+.block-text *:last-child {
+  margin-bottom: 0;
 }
 
-#photos .block-text p {
-  font-size: .8em;
-  line-height: 1.4;
+.block-text h1 {
+  font-size: 2rem;
 }
 
-#photos .block-text li {
+.block-text p,
+.block-text ul {
+}
+
+#photos .block-text ul {
+  padding: 0;
+  margin: 0;
+
   list-style: none;
-  font-size: .8em;
-  line-height: 1.4;
+  list-style-position: outside;
 }
 
-#photos .block-text li::after {
-  content: ' ✓';
-  margin-right: 5px;
+#photos .block-text li::before {
+  content: '✓ ';
+  margin-left: -1rem;
 }
 
-@media (max-width: 700px) {
-  #photos .block-text h1{
-    text-decoration: none;
-    font-size: 2em;
+#photos #family .block-text {
+  background-color: rgb(102, 82, 131, .8);
+}
+
+#photos #ice-cream .block-text {
+  background-color: rgb(126, 188, 164, .8);
+}
+
+@media (min-width: 600px) {
+  #photos #ice-cream {
+    justify-content: flex-end;
+  }
+  #photos #ice-cream .block-text {
+    margin-right: 5vw;
+    width: 60%;
+  }
+}
+
+@media (min-width: 700px) {
+  #photos #ice-cream .block-text {
+    margin-right: 10vw;
+  }
+}
+
+@media (min-width: 1400px) {
+  #photos #family .block-text {
+    position: relative;
+    top: 10%;
+    right: 50%;
+    margin-right: 0;
   }
   
-  #photos .block-text p {
-    font-size: 1em;
-    line-height: 1.8;
-  }  
+  #photos #ice-cream .block-text {
+    min-width: 800px;
+  }
+}
+
+@media (min-width: 1800px) {
+  #photos .block-text {
+    width: 40%;
+    max-width: 40%;
+    padding: 2vh 2vw;
+    border-radius: .5vw;
+  }
+
+  #photos #ice-cream .block-text {
+    margin-right: 20vw;
+  }
+
+  .block-text h1 {
+    font-size: 2.5vw;
+  }
+  
+  .block-text p,
+  .block-text ul {
+    font-size: 1vw;
+  }
 }
 
 #photos #family {
   background-image: url('./images/family500.jpg');
-  background-size: cover;
   background-position-y: 45%;
 }
 
@@ -224,22 +402,8 @@ nav li {
   }
 }
 
-
-
-
-#photos #family .block-text {
-  position: relative;
-  top: 10%;
-  left: 5%;
-  width: 70%;
-  color: white;
-  text-shadow: 1px 1px 2px black;
-}
-
 #photos #ice-cream {
   background-image: url('./images/tommy_pixabay/gooseberry500.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
   background-position-y: 30%;
 }
 
@@ -253,44 +417,6 @@ nav li {
   }
 }
 
-#photos #ice-cream .block-text {
-  position: relative;
-  top: 10%;
-  left: 25%;
-  width: 70%;
-
-  text-align: right;
-  color: white;
-  text-shadow: 1px 1px 2px black;
-}
-
-#photos #ice-cream .block-text p {
-  font-size: .8em;
-}
-
-@media (max-width: 800px) {
-  .wrapper {
-    flex-direction: column;
-    align-items: center;
-    padding-top: 30px;
-  }
-
-  .wrapper img {
-    width: 40vw;
-  }
-
-  .photo-text {
-    width: 80vw;
-  }
-
-  .wrapper-1 br {
-    display: none;
-  }
-
-  #pops {
-    order: 0;
-  }
-}
 
 #contact {
   padding: 2rem 0 1rem 0;
@@ -448,7 +574,7 @@ nav li {
 footer {
   padding: 5px;
   background-color: black;
-  font-size: 1rem;
+  font-size: .8rem;
   text-align: center;
 }
 
@@ -465,7 +591,7 @@ footer a:hover {
 
 @media (min-width: 1800px) {
   footer{
-   font-size: 1vw;
+  font-size: 1vw;
   }  
 }
 
@@ -509,9 +635,13 @@ footer a:hover {
   color: white
 }
 
-@media (max-width: 770px) {
+#social-bar {
+  display: none;
+}
+
+@media (min-width: 771px) {
   #social-bar {
-    display: none;
+    display: flex;
   }
 }
 
@@ -537,16 +667,16 @@ footer a:hover {
 
 #image-blocks .block-text h1 {
   text-decoration: underline;
-  font-size: 1.5em;
+  font-size: 2rem;
 }
 
 #image-blocks .block-text h4 {
-  font-size: 1em;
+  font-size: 1.5rem;
 }
 
 #image-blocks .block-text a {
   padding: 10px;
-  font-size: .8em;
+  font-size: 1rem;
 }
 
 #image-blocks #yogurt {
@@ -555,11 +685,8 @@ footer a:hover {
   background-position-y: 60%;
 }
 
-
 #image-blocks #yogurt .block-text {
   position: relative;
-  top: 30%;
-  left: 45%;
 }
 
 #image-blocks #paletas {
@@ -570,11 +697,6 @@ footer a:hover {
 
 #image-blocks #paletas .block-text {
   position: relative;
-  top: 15%;
-  left: 5%;
-  width: 70%;
-  color: rgb(255, 255, 255, .7);
-  text-shadow: 1px 1px 2px black;
 }
 
 #image-blocks #parfait {
@@ -585,16 +707,6 @@ footer a:hover {
 
 #image-blocks #parfait .block-text {
   position: relative;
-  top: 10%;
-  left: 5%;
-  width: 70%;
-  color: black;
-  /* color: rgb(255, 255, 255, .7); */
-  text-shadow: 1px 1px 2px white;
-}
-
-#image-blocks #parfait .block-text a {
-  text-shadow: none;
 }
 
 #image-blocks #malteadas {
@@ -605,19 +717,6 @@ footer a:hover {
 
 #image-blocks #malteadas .block-text {
   position: relative;
-  top: 10%;
-  left: 5%;
-  width: 70%;
-  color: rgb(255, 255, 255, .9);
-  text-shadow: 1px 1px 2px black;
-}
-
-#image-blocks #malteadas .block-text h4 {
-  margin-bottom: 20px;
-}
-
-#image-blocks #malteadas .block-text ul {
-  margin-top: 10px;
 }
 
 #image-blocks #alfajor {
@@ -628,9 +727,6 @@ footer a:hover {
 
 #image-blocks #alfajor .block-text {
   position: relative;
-  top: 10%;
-  left: 10%;
-  width: 65%;
 }
 
 #image-blocks #brownie {
@@ -641,11 +737,6 @@ footer a:hover {
 
 #image-blocks #brownie .block-text {
   position: relative;
-  top: 10%;
-  left: 40%;
-  width: 50%;
-  color: rgb(255, 255, 255, .8);
-  text-shadow: 1px 1px 2px black;
 }
 
 #image-blocks #salpicon {
@@ -656,11 +747,6 @@ footer a:hover {
 
 #image-blocks #salpicon .block-text {
   position: relative;
-  top: 50%;
-  left: 5%;
-  width: 70%;
-  color: rgb(255, 255, 255, .8);
-  text-shadow: 1px 1px 2px black;
 }
 
 #image-blocks #affogato {
@@ -671,11 +757,6 @@ footer a:hover {
 
 #image-blocks #affogato .block-text {
   position: relative;
-  top: 10%;
-  left: 55%;
-  width: 30%;
-  color: rgb(255, 255, 255, .8);
-  text-shadow: 1px 1px 2px black;
 }
 
 #image-blocks #frappe {
@@ -686,10 +767,6 @@ footer a:hover {
 
 #image-blocks #frappe .block-text {
   position: relative;
-  top: 10%;
-  left: 5%;
-  width: 60%;
-  color: black
 }
 
 #image-blocks #soda {
@@ -700,9 +777,6 @@ footer a:hover {
 
 #image-blocks #soda .block-text {
   position: relative;
-  top: 25%;
-  left: 50%;
-  width: 35%;
 }
 
 #image-blocks #aromaticas {
@@ -713,11 +787,6 @@ footer a:hover {
 
 #image-blocks #aromaticas .block-text {
   position: relative;
-  top: 15%;
-  left: 60%;
-  width: 35%;
-  color: rgb(255, 255, 255, .8);
-  text-shadow: 1px 1px 2px black;
 }
 
 @media (min-width: 501px) {
