@@ -303,6 +303,7 @@ nav li {
   max-width: 500px;
   
   color: rgb(255,255,255,.9);
+  color: rgba(255,255,255,.9);
   border-radius: .3rem;
 }
 
@@ -333,10 +334,12 @@ nav li {
 
 #photos #family .block-text {
   background-color: rgb(102, 82, 131, .8);
+  background-color: rgba(102, 82, 131, .8);
 }
 
 #photos #ice-cream .block-text {
   background-color: rgb(126, 188, 164, .8);
+  background-color: rgba(126, 188, 164, .8);
 }
 
 @media (min-width: 600px) {
@@ -663,6 +666,16 @@ footer a:hover {
 /* Menu */
 #image-blocks .block {
   height: 60vh;
+}
+
+#image-blocks .block-text-green {
+  background-color: rgb(126, 188, 164, .8);
+  background-color: rgba(126, 188, 164, .8);
+}
+
+#image-blocks .block-text-purple {
+  background-color: rgb(102, 82, 131, .8);
+  background-color: rgba(102, 82, 131, .8);
 }
 
 #image-blocks .block-text h1 {
