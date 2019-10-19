@@ -422,7 +422,7 @@ nav li {
 
 
 #contact {
-  padding: 2rem 0 1rem 0;
+  padding: 1.5rem 0;
   background-color: var(--purple);
   color: var(--strawberry);
 
@@ -432,20 +432,26 @@ nav li {
 
 #contact > div {
   display: flex;
-  align-items: stretch;
+  flex-direction: column-reverse;
+  align-items: center;
   justify-content: space-around;
   text-align: center;
 }
 
 .contact-section {
   min-width: 300px;
-  max-width: 30vw;
+  width: 70vw;
+  max-width: 500px;
+}
+
+.margin-bottom {
+  margin-bottom: 2rem;
 }
 
 .contact-section h2 {
   /* border-top: 1px solid #B6ABC6; 
   border-bottom: 1px solid #B6ABC6; */
-  margin-bottom: 25px;
+  margin-bottom: 10px;
   font-size: 2rem;
 }
 
@@ -469,7 +475,7 @@ nav li {
 
 #links {
   display: flex;
-  font-size: 3rem;
+  font-size: 2.5rem;
   justify-content: space-around;
 }
 
@@ -520,43 +526,43 @@ nav li {
 }
 
 #contact iframe {
-  align-self: center;
-  margin-top: .8rem;
-
-  width: 50vw;
-  height: 300px;
+  display: none;
 }
 
-@media (max-width: 900px) {
+@media (min-width: 900px) {
   #contact {
-    padding: 1.5rem 0;
+    padding: 2rem 0 1rem 0;
   }
   
   #contact > div {
-    flex-direction: column-reverse;
-    align-items: center;
+    flex-direction: row;
+    align-items: stretch;
   }
 
   .contact-section {
-    min-width: 300px;
-    width: 70vw;
-    max-width: 500px;
+    width: 300px;
+    max-width: 30vw;  
   }
 
   #contact h2 {
-    margin-bottom: 10px;
+    margin-bottom: 25px;
   }
   
   .margin-bottom {
-    margin-bottom: 2rem;
+    margin-bottom: 0;
   }
 
   #links {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 
   #contact iframe {
-    display: none;
+    display: block;
+    align-self: center;
+    margin-top: .8rem;
+  
+    width: 50vw;
+    height: 300px;
   }
 }
 
@@ -682,6 +688,10 @@ footer a:hover {
   height: 60vh;
 }
 
+#image-blocks .block-text {
+  width: auto;
+}
+
 #image-blocks .block-text-green {
   background-color: rgb(126, 188, 164, .8);
   background-color: rgba(126, 188, 164, .8);
@@ -698,12 +708,30 @@ footer a:hover {
 }
 
 #image-blocks .block-text h4 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 #image-blocks .block-text a {
   padding: 10px;
   font-size: 1rem;
+}
+
+@media (min-width: 1800px) {
+  #image-blocks .block-text {
+    width: auto;
+    max-width: 30vw;
+    padding: 2vw 2vh;
+    border-radius: .5vw;
+  }
+
+  #image-blocks .block-text h1 {
+    font-size: 2.5vw;
+  }
+  
+  #image-blocks .block-text h4,
+  #image-blocks .block-text a {
+    font-size: 1vw;
+  }
 }
 
 #image-blocks #yogurt {
@@ -723,6 +751,16 @@ footer a:hover {
 }
 
 #image-blocks #paletas .block-text {
+  position: relative;
+}
+
+#image-blocks #superbowl {
+  background-image: url('./images/tommy_pixabay/superbowl500.jpg');
+  background-size: cover;
+  background-position-y: 80%;
+}
+
+#image-blocks #superbowl .block-text {
   position: relative;
 }
 
@@ -763,6 +801,16 @@ footer a:hover {
 }
 
 #image-blocks #brownie .block-text {
+  position: relative;
+}
+
+#image-blocks #banana-split {
+  background-image: url('./images/tommy_pixabay/bananas500.jpg');
+  background-size: cover;
+  background-position-y: 55%;
+}
+
+#image-blocks #banana-split .block-text {
   position: relative;
 }
 
@@ -816,12 +864,17 @@ footer a:hover {
   position: relative;
 }
 
+
+
 @media (min-width: 501px) {
   #image-blocks #yogurt {
     background-image: url('./images/tommy_pixabay/yogurt_cropped.jpg');
   }
   #image-blocks #paletas {
     background-image: url('./images/tommy_pixabay/paletas_cropped.jpg');
+  }
+  #image-blocks #superbowl {
+    background-image: url('./images/tommy_pixabay/superbowl3000.jpg');
   }
   #image-blocks #parfait {
     background-image: url('./images/tommy_pixabay/parfait.jpg');
@@ -834,6 +887,9 @@ footer a:hover {
   }
   #image-blocks #brownie {
     background-image: url('./images/tommy_pixabay/brownie_cropped.jpg');
+  }
+  #image-blocks #banana-split {
+    background-image: url('./images/tommy_pixabay/bananas.jpg');
   }
   #image-blocks #salpicon {
     background-image: url('./images/tommy_pixabay/salpicon.jpg');
@@ -852,14 +908,24 @@ footer a:hover {
   }
 }
 
-/* Product Pages */
-.product { 
-  padding: 5vw;
-  padding-bottom: 3vw;
+/* Eventos */
+#eventos {
+  height: 600px;
+  background-image: url("./images/examples/party4500.jpg");
+  background-attachment: fixed;
+  background-position: 40%;
+  background-repeat: no-repeat;
+  background-size: cover;
 
-  background-color: var(--green);
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  text-align: center;
 }
 
-.product h1 {
-  color: var(--purple);
+@media (min-width: 501px) {
+  #eventos {
+    background-image: url("./images/examples/party4.jpg");
+  }
 }
