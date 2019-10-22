@@ -486,7 +486,8 @@ nav li {
 
 .fa-instagram,
 .fa-facebook,
-.fa-whatsapp {
+.fa-whatsapp,
+.fa-envelope {
   color: var(--strawberry);
 
   -webkit-transition: color .2s ease-in-out;
@@ -505,6 +506,10 @@ nav li {
 
 .fa-whatsapp:hover {
   color: #25d366;
+}
+
+.fa-envelope:hover {
+  color: #ffdb4d;
 }
 
 #map a {
@@ -924,8 +929,31 @@ footer a:hover {
   text-align: center;
 }
 
+#eventos .block-text {
+  width: auto;
+  max-width: 90%;
+
+  background-color: rgb(102, 82, 131, .8);
+  background-color: rgba(102, 82, 131, .8);
+}
+
+#eventos-links {
+  font-size: 2em;
+}
+
+#eventos-links > * {
+  margin-left: .5em;
+  margin-right: .5em;
+}
+
 @media (min-width: 501px) {
   #eventos {
     background-image: url("./images/examples/party4.jpg");
   }
+}
+
+/* Trabaja */
+#trabaja {
+  background-color: var(--green);
+  height: 600px;
 }
