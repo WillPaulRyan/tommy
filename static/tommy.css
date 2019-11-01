@@ -905,8 +905,13 @@ footer a:hover {
   background-image: url("../static/images/tommy_pixabay/jam.jpg");
 }
 
-#paletas-info {
+#paletas-info #refrescantes{
+  background-image: url("../static/images/tommy_pixabay/refrescante_cropped.jpg");
+  background-position: left;
+}
 
+#paletas-info #sin-azucar {
+  background-image: url("../static/images/tommy_pixabay/sin_azucar.jpg");
 }
 
 
