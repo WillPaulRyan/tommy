@@ -337,10 +337,6 @@ nav li {
   font-size: 2rem;
 }
 
-.block-text p,
-.block-text ul {
-}
-
 #photos .block-text ul {
   padding: 0;
   margin: 0;
@@ -711,229 +707,208 @@ footer a:hover {
 } 
 
 /* Menu */
-#image-blocks .block {
+.image-blocks .block {
   height: 60vh;
+  background-size: cover;
 }
 
-#image-blocks .block-text {
+
+.image-blocks .block-text {
   width: auto;
+  position: relative;
 }
 
-#image-blocks .block-text-green {
+.image-blocks .block-text-green {
   background-color: rgb(126, 188, 164, .8);
   background-color: rgba(126, 188, 164, .8);
 }
 
-#image-blocks .block-text-purple {
+.image-blocks .block-text-purple {
   background-color: rgb(102, 82, 131, .8);
   background-color: rgba(102, 82, 131, .8);
 }
 
-#image-blocks .block-text h1 {
+.image-blocks .block-text h1 {
   text-decoration: underline;
   font-size: 2rem;
 }
 
-#image-blocks .block-text h4 {
+.image-blocks .block-text h4 {
   font-size: 1.4rem;
 }
 
-#image-blocks .block-text a {
+.image-blocks .block-text a {
   padding: 10px;
   font-size: 1rem;
 }
 
 @media (min-width: 1800px) {
-  #image-blocks .block-text {
+  .image-blocks .block-text {
     width: auto;
     max-width: 30vw;
     padding: 2vw 2vh;
     border-radius: .5vw;
   }
 
-  #image-blocks .block-text h1 {
+  .image-blocks .block-text h1 {
     font-size: 2.5vw;
   }
   
-  #image-blocks .block-text h4,
-  #image-blocks .block-text a {
+  .image-blocks .block-text h4,
+  .image-blocks .block-text a {
     font-size: 1vw;
   }
 }
 
-#image-blocks #yogurt {
+.image-blocks #yogurt {
   background-image: url('./images/tommy_pixabay/yogurt_cropped500.jpg');
-  background-size: cover;
   background-position-y: 60%;
 }
 
-#image-blocks #yogurt .block-text {
-  position: relative;
-}
-
-#image-blocks #paletas {
+.image-blocks #paletas {
   background-image: url('./images/tommy_pixabay/paletas_cropped500.jpg');
-  background-size: cover;
   background-position-y: 60%;
 }
 
-#image-blocks #paletas .block-text {
-  position: relative;
-}
-
-#image-blocks #superbowl {
+.image-blocks #superbowl {
   background-image: url('./images/tommy_pixabay/superbowl500.jpg');
-  background-size: cover;
   background-position-y: 80%;
 }
 
-#image-blocks #superbowl .block-text {
-  position: relative;
-}
-
-#image-blocks #parfait {
+.image-blocks #parfait {
   background-image: url('./images/tommy_pixabay/parfait500.jpg');
-  background-size: cover;
   background-position-y: 70%;
 }
 
-#image-blocks #parfait .block-text {
-  position: relative;
-}
-
-#image-blocks #malteadas {
+.image-blocks #malteadas {
   background-image: url('./images/tommy_pixabay/smoothie_cropped500.jpg');
-  background-size: cover;
   background-position-y: 59%;
 }
 
-#image-blocks #malteadas .block-text {
-  position: relative;
-}
-
-#image-blocks #alfajor {
+.image-blocks #alfajor {
   background-image: url('./images/tommy_pixabay/alfajor_cropped500.jpg');
-  background-size: cover;
   background-position-y: 40%;
 }
 
-#image-blocks #alfajor .block-text {
-  position: relative;
-}
-
-#image-blocks #brownie {
+.image-blocks #brownie {
   background-image: url('./images/tommy_pixabay/brownie_cropped500.jpg');
-  background-size: cover;
   background-position-y: 50%;
 }
 
-#image-blocks #brownie .block-text {
-  position: relative;
-}
-
-#image-blocks #banana-split {
+.image-blocks #banana-split {
   background-image: url('./images/tommy_pixabay/bananas500.jpg');
-  background-size: cover;
   background-position-y: 55%;
 }
 
-#image-blocks #banana-split .block-text {
-  position: relative;
-}
-
-#image-blocks #salpicon {
+.image-blocks #salpicon {
   background-image: url('./images/tommy_pixabay/salpicon500.jpg');
-  background-size: cover;
   background-position-y: 55%;
 }
 
-#image-blocks #salpicon .block-text {
-  position: relative;
-}
-
-#image-blocks #affogato {
+.image-blocks #affogato {
   background-image: url('./images/tommy_pixabay/affogato_cropped500.jpg');
-  background-size: cover;
   background-position-y: 85%;
 }
 
-#image-blocks #affogato .block-text {
-  position: relative;
-}
-
-#image-blocks #frappe {
+.image-blocks #frappe {
   background-image: url('./images/tommy_pixabay/frappe2_cropped500.jpg');
-  background-size: cover;
   background-position-y: 55%;
 }
 
-#image-blocks #frappe .block-text {
-  position: relative;
-}
-
-#image-blocks #soda {
+.image-blocks #soda {
   background-image: url('./images/tommy_pixabay/soda_cropped500.jpg');
-  background-size: cover;
   background-position-y: 60%;
 }
 
-#image-blocks #soda .block-text {
-  position: relative;
-}
-
-#image-blocks #aromaticas {
+.image-blocks #aromaticas {
   background-image: url('./images/tommy_pixabay/aromatica_cropped500.jpg');
-  background-size: cover;
   background-position-y: 60%;
 }
-
-#image-blocks #aromaticas .block-text {
-  position: relative;
-}
-
-
 
 @media (min-width: 501px) {
-  #image-blocks #yogurt {
+  .image-blocks #yogurt {
     background-image: url('./images/tommy_pixabay/yogurt_cropped.jpg');
   }
-  #image-blocks #paletas {
+  .image-blocks #paletas {
     background-image: url('./images/tommy_pixabay/paletas_cropped.jpg');
   }
-  #image-blocks #superbowl {
+  .image-blocks #superbowl {
     background-image: url('./images/tommy_pixabay/superbowl3000.jpg');
   }
-  #image-blocks #parfait {
+  .image-blocks #parfait {
     background-image: url('./images/tommy_pixabay/parfait.jpg');
   }
-  #image-blocks #malteadas {
+  .image-blocks #malteadas {
     background-image: url('./images/tommy_pixabay/smoothie_cropped.jpg');
   }
-  #image-blocks #alfajor {
+  .image-blocks #alfajor {
     background-image: url('./images/tommy_pixabay/alfajor_cropped.jpg');
   }
-  #image-blocks #brownie {
+  .image-blocks #brownie {
     background-image: url('./images/tommy_pixabay/brownie_cropped.jpg');
   }
-  #image-blocks #banana-split {
+  .image-blocks #banana-split {
     background-image: url('./images/tommy_pixabay/bananas.jpg');
   }
-  #image-blocks #salpicon {
+  .image-blocks #salpicon {
     background-image: url('./images/tommy_pixabay/salpicon.jpg');
   }
-  #image-blocks #affogato {
+  .image-blocks #affogato {
     background-image: url('./images/tommy_pixabay/affogato_cropped.jpg');
   }
-  #image-blocks #frappe {
+  .image-blocks #frappe {
     background-image: url('./images/tommy_pixabay/frappe2_cropped.jpg');
   }
-  #image-blocks #soda {
+  .image-blocks #soda {
     background-image: url('./images/tommy_pixabay/soda_cropped.jpg');
   }
-  #image-blocks #aromaticas {
+  .image-blocks #aromaticas {
     background-image: url('./images/tommy_pixabay/aromatica_cropped.jpg');
   }
 }
+
+/* Productos */
+.ver-mas .block {
+  background-position: center;
+}
+
+#button-wrapper {
+  width: 100%;
+  text-align: center;
+}
+
+.ver-mas .block-text ul {
+  margin-left: -1rem;
+
+  -moz-column-count: 2;
+  -moz-column-gap: 10%;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 10%;
+  column-count: 2;
+  column-gap: 10%;
+}
+
+#yogurt-info #frutales {
+  background-image: url("../static/images/tommy_pixabay/fruit.jpg");
+  background-position: 20% !important;
+}
+
+#yogurt-info #cereales {
+  background-image: url("../static/images/tommy_pixabay/cereales.jpg");
+}
+
+#yogurt-info #dulces {
+  background-image: url("../static/images/tommy_pixabay/gummies.jpg");
+}
+
+#yogurt-info #salsas {
+  background-image: url("../static/images/tommy_pixabay/jam.jpg");
+}
+
+#paletas-info {
+
+}
+
 
 /* Eventos */
 #eventos {
