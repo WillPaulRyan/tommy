@@ -879,7 +879,10 @@ footer a:hover {
 
 .ver-mas .block-text ul {
   margin-left: -1rem;
+}
 
+#yogurt-info .block-text ul,
+#paletas-info .block-text ul {
   -moz-column-count: 2;
   -moz-column-gap: 10%;
   -webkit-column-count: 2;
