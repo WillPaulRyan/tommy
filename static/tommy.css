@@ -457,7 +457,7 @@ nav li {
 }
 
 .contact-section {
-  min-width: 300px;
+  min-width: 370px;
   width: 70vw;
   max-width: 500px;
 }
@@ -548,11 +548,27 @@ nav li {
   color: var(--strawberry);
 }
 
+#hour-listings {
+  display: inline-block;
+  text-align: right;
+}
+
 #contact iframe {
   display: none;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 700px) {
+  #contact iframe {
+    display: block;
+    align-self: center;
+    margin-top: .8rem;
+  
+    width: 50vw;
+    height: 300px;
+  }
+}
+
+@media (min-width: 1100px) {
   #contact {
     padding: 2rem 0 1rem 0;
   }
@@ -563,12 +579,12 @@ nav li {
   }
 
   .contact-section {
-    width: 300px;
+    width: 400px;
     max-width: 30vw;  
   }
 
   #contact h2 {
-    margin-bottom: 25px;
+    margin-bottom: 1rem;
   }
   
   .margin-bottom {
@@ -577,15 +593,6 @@ nav li {
 
   #links {
     font-size: 3rem;
-  }
-
-  #contact iframe {
-    display: block;
-    align-self: center;
-    margin-top: .8rem;
-  
-    width: 50vw;
-    height: 300px;
   }
 }
 
@@ -654,7 +661,7 @@ footer a:hover {
   width: 50px;
   padding: 10px;
 
-  display: flex;
+  display: none;
   justify-content: center;
 }
 
@@ -679,10 +686,6 @@ footer a:hover {
 #sidebar-social-links a:hover i {
   font-size: 25px;
   color: white
-}
-
-#social-bar {
-  display: none;
 }
 
 @media (min-width: 771px) {
@@ -959,6 +962,34 @@ footer a:hover {
 
 /* Trabaja */
 #trabaja {
-  background-color: var(--green);
-  height: 600px;
+  height: 700px;
+
+  background-image: url("./images/shirt2.jpg");
+  background-position-x: 30%;
+  background-position-y: 30%;
+}
+
+#trabaja div {
+  width: auto;
+}
+
+#trabaja h1 {
+  text-decoration: none;
+}
+
+#trabaja a {
+  padding: 0;
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: rgb(255,255,255,.8);
+
+  -webkit-transition: color .2s ease-in-out;
+  -moz-transition: color .2s ease-in-out;
+  -o-transition: color .2s ease-in-out;
+  transition: color .2s ease-in-out;
+}
+
+#trabaja a:hover {
+  color: #ffdb4d;
+  text-decoration: underline;
 }
