@@ -912,14 +912,48 @@ footer a:hover {
 }
 
 #paletas-info #refrescantes{
-  background-image: url("../static/images/tommy_pixabay/refrescante_cropped.jpg");
-  background-position: left;
+  background-image: url("../static/images/tommy_pixabay/orange_pop.jpg");
+  background-position-x: 70%;
+  background-position-y: 40%;
 }
 
 #paletas-info #sin-azucar {
   background-image: url("../static/images/tommy_pixabay/sin_azucar.jpg");
 }
 
+#paletas-info #cremosa {
+  background-image: url("../static/images/tommy_pixabay/creamy_pop.jpg");
+}
+
+#paletas-info #fantasia {
+  background-image: url("../static/images/tommy_pixabay/fantasy_pop.jpg");
+  background-position-x: 10%;
+  background-position-y: 50%;
+}
+
+#paletas-info #crunchy {
+  background-image: url("../static/images/tommy_pixabay/crunchy_paleta.jpg");
+  background-position-x: 10%;
+}
+
+#frappes-info #frutos {
+  background-image: url("../static/images/tommy_pixabay/mango_frappe.jpg");
+}
+
+#frappes-info #fantasia {
+  background-image: url("../static/images/tommy_pixabay/sweet_frappe.jpg");
+  background-position-y: 50%;
+}
+
+
+@media (min-width: 501px) {
+  #paletas-info #fantasia {
+    background-image: url("../static/images/tommy_pixabay/fantasy_pop.jpg");
+    background-position-x: 10%;
+    background-position-y: 90%;
+  }
+  
+}
 
 /* Eventos */
 #eventos {
