@@ -1071,7 +1071,8 @@ footer a:hover {
   text-decoration: none;
 }
 
-#trabaja a {
+#trabaja a,
+#sugerencias a {
   padding: 0;
   font-size: 1.4rem;
   text-decoration: none;
@@ -1083,7 +1084,14 @@ footer a:hover {
   transition: color .2s ease-in-out;
 }
 
-#trabaja a:hover {
+#trabaja a:hover,
+#sugerencias a:hover {
   color: #ffdb4d;
   text-decoration: underline;
+}
+
+/* Sugerencias */
+
+#sugerencias {
+  background-image: url("./images/tommy_pixabay/questions.jpg");
 }
