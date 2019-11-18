@@ -1009,22 +1009,32 @@ footer a:hover {
   background-color: var(--green);
 }
 
-#encuentranos #encuentranos-content {
+#encuentranos-content {
   width: 100%
 }
 
+@media (min-width: 501px) {
+  #encuentranos {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #encuentranos-content {
+    width: 60vw;
+  }
+}
+
 #encuentranos iframe {
-  height: 300px;
+  height: 400px;
   width: 100%;
 }
 
-#encuentranos #encuentranos-text {
+#encuentranos-text {
   margin-top: 1rem;
   text-align: center;
 }
 
-
-#encuentranos #encuentranos-text a {
+#encuentranos-text a {
   color: rgb(0, 0, 0, .7);
   color: rgba(0, 0, 0, .7);
 
