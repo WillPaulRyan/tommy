@@ -27,17 +27,21 @@
     <link rel="dns-prefetch" href="https://maps.gstatic.com">
     <link rel="dns-prefetch" href="https://maps.googleapis.com">
 
-    <link rel="manifest" href="../manifest.json">
-    <link rel="stylesheet" href="../static/tommy.css">
-    <link rel="shortcut icon" type="image/x-icon" href="../static/icon.png" />
+    <!-- Animate on Scroll library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <link rel="manifest" href="./manifest.json">
+    <link rel="stylesheet" href="./static/tommy.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./static/icon.png" />
     <meta name="theme-color" content="#eb6d71"/>
-    <title>Paletas Artesenales | Tommy Frozen Yogurt</title>
-    <meta name="Description" content="Vea nuestros productos">
+    <title>Sugerencias | Tommy Frozen Yogurt</title>
+    <meta name="Description" content="Cotiza tu evento con Tommy Frozen Yogurt, helado para Rionegro">
   </head>
   <body>
     <nav class="navbar navbar-expand-md navbar-dark">
-      <a class="navbar-brand" href="../index.html" aria-label="Inicio / Home">
-        <img src="../static/logo.svg" width="30" height="30" alt="">
+      <a class="navbar-brand" href="index.html" aria-label="Inicio / Home">
+        <img src="./static/logo.svg" width="30" height="30" alt="">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -45,107 +49,29 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto text-right">
           <li class="nav-item">
-            <a class="nav-link" href="../index.html">Inicio</a>
+            <a class="nav-link" href="index.html">Inicio</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="../menu.html">Productos <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="menu.html">Productos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../eventos.html">Eventos</a>
+            <a class="nav-link" href="eventos.html">Eventos <span class="sr-only">(current)</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" 
               role="button" data-toggle="dropdown" aria-haspopup="true" 
               aria-expanded="false">Contáctanos</a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item text-right" href="../encuentranos.html">Encuéntranos</a>
-              <a class="dropdown-item text-right" href="../trabaja.html">Trabaja con Nosotros</a>
-              <a class="dropdown-item text-right" href="../sugerencias.html">Sugerencias</a>
+              <a class="dropdown-item text-right" href="encuentranos.html">Encuéntranos</a>
+              <a class="dropdown-item text-right" href="trabaja.html">Trabaja con Nosotros</a>
+              <a class="dropdown-item text-right active" href="#">Sugerencias</a>
             </div>
           </li>    
         </ul>
       </div>
     </nav>
-    
-    <section class="image-blocks ver-mas" id="paletas-info">
-      <div class="block" id="refrescantes">
-        <div class="block-text block-text-green">
-          <h1>Refrescantes</h1>
-          <h5>Refrescantes: Son nuestras paletas hechas en agua con trozos de frutas naturales. Son endulzadas con fructosa, por lo que es un producto apto para diabéticos.</h5>
-          <h5>¡Descubre sabores ácidos y dulces todas las semanas!</h5>
-          <h5>
-            <ul>
-              <li>Mango biche</li>
-              <li>Mango dulce</li>
-              <li>Frutos rojos</li>
-              <li>Piña</li>
-              <li>Fresa-Banano</li>
-              <li>Lemonada de ositos</li>
-              <li>Guanábana</li>
-              <li>Salpicón</li>
-              <li>Coco</li>
-              <li>¡Y mas!</li>
-            </ul>
-          </h5>
-        </div>
-      </div>
-      <div class="block" id="sin-azucar">
-        <div class="block-text block-text-green">
-          <h1>Sin azúcar</h1>
-          <h5>Especiales para quienes cumplen estrictamente con su dieta, dejándose deleitar.</h5>
-        </div>
-      </div>
-      <div class="block" id="cremosa">
-        <div class="block-text block-text-green">
-          <h1>Cremosa</h1>
-          <h5>Deliciosas paletas a base de leche deslactosada o yogurt con mezcla de frutas naturales.</h5>
-          <h5>
-            <ul>
-              <li>Mandarina</li>
-              <li>Frutos rojos</li>
-              <li>Maracuyá</li>
-              <li>Guanábana</li>
-              <li>Lulo</li>
-              <li>Melocotón</li>
-              <li>Cereza</li>
-            </ul>
-          </h5>
-        </div>
-      </div>
-      <div class="block" id="fantasia">
-        <div class="block-text block-text-green">
-          <h1>Fantasía dulce</h1>
-          <h5>Dale gusto a tu paladar con estas deliciosas paletas</h5>
-          <h5>
-            <ul>
-              <li>Galleta Oreo</li>
-              <li>Chocolate</li>
-              <li>Arequipe</li>
-              <li>Queso y bocadillo</li>
-              <li>Café amaretto</li>
-              <li>Arroz con leche</li>
-            </ul>
-          </h5>
-        </div>
-      </div>
-      <div class="block" id="crunchy">
-        <div class="block-text block-text-green">
-          <h1>Crunchy paletas</h1>
-          <h5>Puedes agregar un toque crocante a tu paleta con:</h5>
-          <h5>
-            <ul>
-              <li>Choco crunchies</li>
-              <li>Brownie</li>
-              <li>Masmelo</li>
-              <li>Galleta Oreo</li>
-              <li>Gargeas arcoíris</li>
-            </ul>
-          </h5>
-          <div id="button-wrapper">
-            <a href="../menu.html#paletas" class="btn btn-custom btn-lg" role="button">Regresar al menú</a>
-          </div>
-        </div>
-      </div>
+
+    <section id="sugerencias">
     </section>
 
     <section id="contact">
@@ -164,7 +90,7 @@
             <h4>Parque Comercial Rio del Este</h4>
             <h4>Calle 47 #70B-98: <span class="light">Local 1058</span></h4>
           </a>
-          <a href="../encuentranos.html" class="btn btn-outline-light btn-lg" role="button">Encuéntranos aquí</a>
+          <a href="./encuentranos.html" class="btn btn-outline-light btn-lg" role="button">Encuéntranos aquí</a>
         </div>
         <div class="contact-section margin-bottom" id="hours">
           <h2>Horario</h2>
@@ -178,7 +104,7 @@
     </section>
 
     <footer>
-      <p class="light">&copy;2019 <a href="../index.html">Tommy Frozen Yogurt</a> | Rionegro, Antioquia</p>
+      <p class="light">&copy;2019 <a href="#top">Tommy Frozen Yogurt</a> | Rionegro, Antioquia</p>
     </footer>
 
     <div id="social-bar">
@@ -188,7 +114,6 @@
         <a name="whatsapp" href="https://api.whatsapp.com/send?phone=573123302268" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
       </div>
     </div>
-  
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -196,5 +121,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
+    <!-- Animate On Scroll -->
+    <script>
+        AOS.init();
+    </script>
+  
   </body>
 </html>
