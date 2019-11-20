@@ -1091,7 +1091,30 @@ footer a:hover {
 }
 
 /* Sugerencias */
-
 #sugerencias {
   background-image: url("./images/tommy_pixabay/questions.jpg");
+}
+
+/* Blog Log */
+#blog-log {
+  background-color: var(--green);
+}
+
+/* Blog Posts */
+.blog-container {
+  background-color: var(--green);
+  padding-bottom: 1.5rem; 
+}
+
+.blog-post {
+  min-height: 30vh;
+}
+
+/* .blog-post p {
+  margin-bottom: 0 !important;
+} */
+
+.blog-post img,
+.blog-post iframe {
+  width: 60%
 }
