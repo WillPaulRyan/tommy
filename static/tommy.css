@@ -1166,10 +1166,6 @@ footer a:hover {
   align-items: center;
 }
 
-.blog-log-entry h4 {
-  /* margin-top: 1rem; */
-}
-
 .blog-log-entry a {
   color: black;
   text-decoration: underline;
@@ -1206,6 +1202,10 @@ footer a:hover {
 .blog-post iframe {
   align-self: center;
   text-align: center;
+}
+
+.blog-post h2 {
+  margin-top: 2rem;
 }
 
 .blog-post p {
