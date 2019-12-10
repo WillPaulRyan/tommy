@@ -1134,7 +1134,15 @@ footer a:hover {
 
 /* Blog Log */
 #log-container {
-  background-color: var(--green);
+  /* background-color: var(--green); */
+  background: repeating-linear-gradient(
+    45deg,
+    #cedbbd,
+    #cedbbd 50px,
+    #a9cfc0 50px,
+    #a9cfc0 100px
+  );
+
 
   display: flex;
   flex-direction: column;
@@ -1148,8 +1156,9 @@ footer a:hover {
 }
 
 #blog-log h1 {
-  text-align: center;  
+  text-align: center;
   margin-bottom: 2rem;
+  font-size: 4rem;
 }
 
 #blog-log h5 {
@@ -1181,7 +1190,16 @@ footer a:hover {
 
 /* Blog Posts */
 .blog-container {
-  background-color: var(--green);
+  /* background-color: var(--green); */
+  background: repeating-linear-gradient(
+    45deg,
+    #cedbbd,
+    #cedbbd 50px,
+    #a9cfc0 50px,
+    #a9cfc0 100px
+  );
+
+
   padding: .5rem 1rem;
   
   display: flex;
@@ -1216,6 +1234,11 @@ footer a:hover {
 .blog-post iframe {
   max-height: 200px;
   margin-bottom: 1rem;
+}
+
+.blog-post .btn {
+  width: 25%;
+  align-self: center;
 }
 
 @media (min-width: 501px) {
